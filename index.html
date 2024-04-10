@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html_js</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<header>
+    <h1>
+        Exercicio de validação.
+    </h1>
+</header>
+<body>
+    <section id="entireForm">
+        <div class="cabecalho">
+        <h2>Formulário de validação de quantidades.</h2>
+        <h3 id="ex">Este é um formulário onde inserimos quantidades numericas em dois campos distintos, com o intuito principal de fazer com que o número do segundo campo seja maior do que o primeiro.</h3>
+        </div>
+        <div class="container">
+            <form id="formulario">
+                <label>Digite o primeiro numero</label>
+                <input type="number" id="smnum" name="menorNumero" placeholder="Campo A" value="" required>
+                <label>Digite o segundo numero</label>
+                <input type="number" id="bgnum" name="maiorNumero" placeholder="Campo B" value="" required>
+                <button onclick="result()" id="mainBtn" type="submit">Submit</button>
+            </form> 
+        </div>
+        <h3 id="messageError"></h3>
+        <h3 id="successMessage"></h3>
+    </section>
+    <footer>Este exercicio foi realizado de forma simples, apenas concluindo o que foi requisitado pelo tutor.</footer>
+    <script src="./main.js"></script>
+</body>
+</html>
